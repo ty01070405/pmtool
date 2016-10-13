@@ -1,0 +1,71 @@
+html,body{
+	height:100%;
+	background-color: #fcfdff;
+}
+.navbar{
+	margin-bottom: 0px !important;
+}
+div.frame_container{
+	float:left;
+}
+div.frame_container_no_scroll{
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+#left_top{
+	border-style: hidden solid solid solid;
+	border-width: 1px;
+	border-color:lightgrey;
+	background-color: #f8f8f8;
+}
+div.date_header{
+	float:left;
+	width:100px;
+	height:40px;
+	border-style: hidden solid solid hidden;
+	border-width: 1px;
+	border-color:lightgrey;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #f8f8f8;
+}
+div.user_list{
+	width:200px;
+	height:100px;
+	border-style: hidden solid solid solid;
+	border-width: 1px;
+	border-color:lightgrey;
+	background-color: #f8f8f8;
+	padding: 10px;
+}
+div.user_list_bottom{
+	width:200px;
+	height:50px;
+	border-style: hidden hidden hidden hidden;
+}
+div.schedule_row{
+	position: relative;
+}
+div.schedule_box{
+	float:left;
+	width:100px;
+	height:100px;
+	border-style: hidden solid solid hidden;
+	border-width: 1px;
+	border-color:lightgrey;
+	background-color: 	white;
+	overflow-y: visible;
+}
+div.schedule_box_over{
+	background-color: 	#f8f8f8;
+	z-index: -1;
+}
+div.schedule{
+	position: absolute;
+	border-radius: 3px;
+	border-style: solid;
+	border-color: grey;
+	border-width: 0px 2px 0px 2px;
+	box-sizing: content-box;
+	cursor: move;
+}
