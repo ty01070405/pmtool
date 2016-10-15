@@ -7,16 +7,12 @@
 
     <title>{{ trans('general.page_title') }}</title>
 	
-	<!-- JavaScripts -->
+    <!-- JavaScripts -->
     <script src="js/jquery-2.2.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery-ui.min.js"></script>
-	<script src="js/spin.min.js"></script>
-	<!-- Metis Menu Plugin JavaScript -->
-    <script src="js/metisMenu.min.js"></script>
-	<!-- Custom Theme JavaScript -->
+    <!-- Custom Theme JavaScript -->
     <script src="js/sb-admin-2.js"></script>
-	<script>
+    <script>
 		var days = ['{{ trans('menu.sun') }}','{{ trans('menu.mon') }}','{{ trans('menu.tue') }}','{{ trans('menu.wed') }}','{{ trans('menu.thu') }}','{{ trans('menu.fri') }}','{{ trans('menu.sat') }}'];
 		var months = ['{{ trans('menu.jan') }}', '{{ trans('menu.feb') }}', '{{ trans('menu.mar') }}', '{{ trans('menu.apr') }}', '{{ trans('menu.may') }}', '{{ trans('menu.jun') }}', '{{ trans('menu.jul') }}', 
 			'{{ trans('menu.aug') }}', '{{ trans('menu.sep') }}', '{{ trans('menu.oct') }}', '{{ trans('menu.nov') }}', '{{ trans('menu.dec') }}'];
@@ -29,32 +25,21 @@
 			}
 			$('a[href="' + this_url + '"]').parent().addClass('active');
 		});
-	</script>
-	
-    {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
-
-    <!-- Fonts -->
-    <link href="css/font-awesome.min.css" rel='stylesheet' type='text/css'>
+    </script>
 
     <!-- Styles -->
-	<link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link href="css/font-awesome.min.css" rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-	<!-- MetisMenu CSS -->
-    <link href="css/metisMenu.min.css" rel="stylesheet">
-	<!-- Timeline CSS -->
-    <link href="css/timeline.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/sb-admin-2.css" rel="stylesheet">
-    {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
-	<style type="text/css" media="screen">
-    html, body{
-        margin:0px;
-        padding:0px;
-        height:100%;
-        overflow:hidden;
-    }
-
-</style>
+    <style type="text/css" media="screen">
+        html, body{
+            margin:0px;
+            padding:0px;
+            height:100%;
+            overflow:hidden;
+        }
+    </style>
 </head>
 <body id="app-layout">
 
@@ -63,19 +48,57 @@
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
+                <!-- Collapsed Hamburger -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-				<!-- Branding Image -->
+
+                <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
                    <img height="25px" src="images/sample_logo.png">
                 </a>
-                <a class="navbar-brand" href="index.html">项目管理系统</a>
             </div>
             <!-- /.navbar-header -->
+            
+             <!-- Left Side Of Navbar -->
+                <ul class="nav navbar-nav">
+					<li><a href="#">仪表板</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">项目 <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+						  <li><a href="#">最近项目1</a></li>
+						  <li><a href="#">最近项目2</a></li>
+						  <li role="separator" class="divider"></li>
+						  <li><a href="#">新建项目</a></li>
+						</ul>
+					  </li>
+					  <li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">看板 <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+						  <li><a href="#">最近项目1</a></li>
+						  <li><a href="#">最近项目2</a></li>
+						  <li role="separator" class="divider"></li>
+						  <li><a href="#">新建项目</a></li>
+						</ul>
+					  </li>
+					 <li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">资源调度 <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+						  <li><a href="#">所有资源</a></li>
+						  <li role="separator" class="divider"></li>
+						  <li><a href="#">部门1</a></li>
+						  <li><a href="#">部门2</a></li>
+						  <li role="separator" class="divider"></li>
+						  <li><a href="#">资源管理</a></li>
+						</ul>
+					  </li>
+                </ul>
+				<form class="navbar-form navbar-left">
+				<button type="submit" class="btn btn-primary">新建</button>
+				</form>
 
             <ul class="nav navbar-top-links navbar-right">
                 <li class="dropdown">

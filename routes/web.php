@@ -12,5 +12,8 @@
 */
 
 Route::get('/', function () {
+    return view('main');
+});
+Route::get('/project', function () {
     return view('common/app');
 });
